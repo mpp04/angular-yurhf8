@@ -8,7 +8,7 @@
     {{ product.name }}
     
     </a>
-  </h3 >
+  </h3>
 
     <!-- Interpolation {{ }} lets you render the property value as text; property binding [ ] lets you use the property value in a template expression. -->
 
@@ -19,6 +19,13 @@
       Share
       </button>
 
+
+  
+
+  <app-product-alerts
+  [product]="product"
+  (notify)="onNotify()">
+  </app-product-alerts>
 
 </div>
 

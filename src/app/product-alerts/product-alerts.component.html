@@ -1,0 +1,5 @@
+<p *ngIf="product.price > 700">
+<button (click)="notify.emit()"> Notify Me </button>
+</p>
+
+<!-- Next, define the behavior that should happen when the user clicks the button. Recall that it's the parent, product list component—not the product alerts component—that acts when the child raises the event -->
