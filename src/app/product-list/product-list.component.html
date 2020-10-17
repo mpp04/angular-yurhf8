@@ -8,7 +8,18 @@
     {{ product.name }}
     
     </a>
-    </h3 >
+  </h3 >
+
+    <!-- Interpolation {{ }} lets you render the property value as text; property binding [ ] lets you use the property value in a template expression. -->
+
+  <p *ngIf="product.description">
+    Description: {{ product.description }}
+    </p>
+    <button (click)="share()">
+      Share
+      </button>
+
+
 </div>
 
 <!-- With *ngFor, the <div> repeats for each product in the list. -->
